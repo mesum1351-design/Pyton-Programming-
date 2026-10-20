@@ -25,3 +25,11 @@ print(list)
 
 #len(list)
 print(len(list))
+
+# copy()
+new_list = list.copy()
+print(new_list)
+
+#count()
+
+print(list.count(5))
