@@ -1,6 +1,4 @@
 from abc import ABC, abstractmethod
-
-
 # ==========================================
 # C. Decorator: Transaction se pehle aur baad message dikhana
 # ==========================================
@@ -9,10 +7,7 @@ def transaction_logger(func):
         print("\n[★★★ Transaction Shuru ★★★]")
         func(self, amount)
         print("[★★★ Transaction Khatam ★★★]\n")
-
     return wrapper
-
-
 # ==========================================
 # A & B. Abstract Class aur @property (Balance Security)
 # ==========================================
@@ -46,8 +41,6 @@ class Account(ABC):
     @abstractmethod
     def withdraw(self, amount):
         pass
-
-
 # ==========================================
 # A. Child Classes (Saving aur Current Account)
 # ==========================================
@@ -71,8 +64,6 @@ class CurrentAccount(Account):
             print(f"✅ {amount} nikal liye. Baqi Balance: Rs.{self.balance}")
         else:
             print("❌ Error: Account mein itne paise nahi hain!")
-
-
 # ==========================================
 # Customer Class
 # ==========================================
@@ -81,8 +72,6 @@ class Customer:
         self.name = name
         self.pin = pin
         self.account = account
-
-
 # ==========================================
 # D. Store Customers in a List
 # ==========================================
