@@ -3,9 +3,12 @@ import tkinter as tk
 
 window = tkinter.Tk()
 window.title("Message")
-window.geometry("400x300")
+window.geometry("700x700")
 
-tk.Label(window, text = "Write Message").grid(row=0, column=0)
-tk.Text(window, height = 5, width = 20).grid(row=1, column=0)
+#Text: Used to display or accept text in multiple lines
+tk.Message(window, text="Paragraphs, instructions,"
+                        " or multi-line static messages on screen.").grid(row=0, column=0)
+tk.Label(window, text = "Write Message" ).grid(row=5, column=0)
+tk.Text(window, height = 10, width = 40).grid(row=6, column=0)
 
 window.mainloop()
