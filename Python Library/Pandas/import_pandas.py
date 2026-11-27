@@ -4,7 +4,6 @@ print (pd.__version__)
 
 a = pd.DataFrame({ 'name' : ['Ali','Hassan','Akif'],
                   'Age' : [16,20,34],
-
                    })
 print(a)
 print(a.Age)
